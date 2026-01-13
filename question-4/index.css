@@ -1,0 +1,53 @@
+{
+            display:flex
+            justify-content:center
+            align-items:center
+            height:100vh
+            background-color:#f0f0f0
+            font-family:Arial, sans-serif
+        }
+
+       .big-box {
+            width: 800px;
+            height: 300px;
+            border: 3px solid #d6cece;     
+            box-shadow: 0 8px 20px rgba(0,0,0,0.15); 
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: repeat(2, 1fr);
+            gap: 15px;
+            padding: 15px;
+            background-color: #fff;
+        }
+
+        /* Small square boxes */
+        .small-box {
+            border: 2px solid #555;
+            background-color: #e9f1ff;
+            padding: 10px;
+            box-sizing: border-box;
+        }
+
+        .small-box h3 {
+            margin: 0 0 5px 0;
+            font-size: 16px;
+            text-align: center;
+        }
+
+        .small-box ul {
+            margin: 0;
+            padding-left: 20px;
+            font-size: 14px;
+        }
+        .zero-list {
+  list-style: none;
+  counter-reset: item;
+}
+
+.zero-list li {
+  counter-increment: item;
+}
+
+.zero-list li::before {
+  content: "0" counter(item) ". ";
+}
