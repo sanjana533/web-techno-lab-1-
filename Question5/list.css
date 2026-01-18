@@ -1,0 +1,36 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+}
+
+h2 {
+    color: darkblue;
+}
+
+.title {
+    font-weight: bold;
+}
+
+.main-list {
+    list-style-type: disc;
+}
+
+.main-list ul {
+    list-style-type: circle;
+}
+
+.ordered-list {
+    list-style-type: decimal;
+}
+
+.alpha {
+    list-style-type: upper-alpha;
+}
+
+.roman {
+    list-style-type: lower-roman;
+}
+
+li {
+    margin: 5px 0;
+}
