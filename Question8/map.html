@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Image Map Example</title>
+</head>
+<body>
+
+<h2>Image Map Demonstration</h2>
+
+<!-- Image -->
+<img src="./img.jpg" alt="Image Map" usemap="#mymap" width="400" height="300">
+
+<!-- Image Map -->
+<map name="mymap">
+
+    <!-- Rectangle -->
+    <area shape="rect" coords="20,20,150,100" href="#" alt="Rectangle Area">
+
+    <!-- Circle -->
+    <area shape="circle" coords="250,80,40" href="#" alt="Circle Area">
+
+    <!-- Polygon -->
+    <area shape="poly" coords="200,180,260,160,320,200,280,240,220,220"
+          href="#" alt="Polygon Area">
+
+</map>
+
+</body>
+</html>
