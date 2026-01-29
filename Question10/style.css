@@ -1,0 +1,30 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+table {
+    border-collapse: collapse;
+    margin: 20px auto;
+    width: 600px;          /* fixed size like image */
+}
+
+th, td {
+    border: 2px solid #555;
+    padding: 6px 10px;     /* cell size control */
+    text-align: center;
+    font-size: 15px;
+}
+
+.title {
+    font-size: 20px;
+    padding: 10px;
+}
+
+.lunch {
+    font-size: 16px;
+    padding: 8px;
+}
+
+.project {
+    font-size: 16px;
+}
