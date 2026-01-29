@@ -1,0 +1,48 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+.header {
+    height: 60px;
+    background: #4b4a9c;
+    text-align: center;
+    line-height: 60px;
+}
+
+.menu {
+    height: 40px;
+    background: gray;
+    text-align: center;
+    line-height: 40px;
+}
+
+/* IMPORTANT PART */
+.main {
+    display: flex;
+    height: 300px;
+}
+
+.left {
+    width: 20%;
+    background: tomato;
+    text-align: center;
+}
+
+.content {
+    width: 60%;
+    background: skyblue;
+    text-align: center;
+}
+
+.right {
+    width: 20%;
+    background: #7e5cee;
+    text-align: center;
+}
+
+.footer {
+    height: 50px;
+    background: #7a7369;
+    text-align: center;
+    line-height: 50px;
+}
