@@ -1,0 +1,21 @@
+body {
+    font-family: Arial;
+}
+
+.menu {
+    background-color: yellow;
+    padding: 15px;
+    text-align: center;
+}
+
+.menu a {
+    text-decoration: none;
+    color: black;
+    padding: 8px 15px;
+    font-size: 18px;
+}
+
+.menu .active {
+    background-color: blue;
+    color: white;
+}
