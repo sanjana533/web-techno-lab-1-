@@ -1,0 +1,52 @@
+body {
+    font-family: Arial;
+}
+h2 {
+    text-align: center;
+    color: red;
+}
+form {
+    width: 650px;
+    margin: auto;
+}
+fieldset {
+    border: 2px solid #999;
+    padding: 20px;
+}
+/* Box inside box */
+.row {
+    border: 1px solid #ccc;
+    padding: 5px;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+}
+label {
+    width: 120px;
+}
+input[type="text"],
+textarea,
+select {
+    width: 350px;
+    padding: 6px;
+    border: 1px solid orange;
+}
+textarea {
+    height: 60px;
+}
+input[type="file"] {
+    border: 1px solid #ccc;
+    padding: 4px;
+}
+
+/* Buttons */
+.btn {
+    padding: 6px 12px;
+    background: blue;
+    color: white;
+    border: none;
+}
+
+.clear {
+    background: red;
+}
