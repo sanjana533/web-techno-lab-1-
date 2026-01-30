@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lok Sewa Aayog - User Registration</title>
+    <link rel="stylesheet" href="./registrationloksewa.css">
+</head>
+<body>
+<div class="container">
+<h2>Lok Sewa Aayog</h2>
+<h3>User Registration Form</h3>
+<form>
+<label>Full Name</label>
+<input type="text" placeholder="Enter full name" required>
+
+<label>Date of Birth</label>
+<input type="date" required>
+
+<label>Gender</label>
+<div class="gender">
+<input type="radio" name="gender"> Male
+<input type="radio" name="gender"> Female
+ <input type="radio" name="gender"> Other
+ </div>
+
+ <label>Citizenship Number</label>
+<input type="text" placeholder="Enter citizenship number" required>
+
+<label>Email Address</label>
+<input type="email" placeholder="Enter email" required>
+
+<label>Mobile Number</label>
+<input type="tel" placeholder="Enter mobile number" required>
+
+<label>Post Applied For</label>
+<select required>
+ <option>Select Post</option>
+ <option>Officer</option>
+ <option>Assistant</option>
+  <option>Clerk</option>
+</select>
+
+<label>Password</label>
+<input type="password" placeholder="Create password" required>
+
+<label>Confirm Password</label>
+<input type="password" placeholder="Confirm password" required>
+
+<input type="submit" value="Register">
+ <input type="reset" value="Clear">
+</form>
+</div>
+
+</body>
+</html>
