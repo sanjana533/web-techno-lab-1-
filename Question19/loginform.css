@@ -1,0 +1,110 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Nature Background */
+body {
+    min-height: 100vh;
+    background:
+        linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
+        url("img.jpeg");
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Main Container */
+.container {
+    width: 90%;
+    max-width: 1000px;
+    background: #8d8b8ba6;
+    padding: 30px;
+    border-radius: 8px;
+    color: #fff;
+}
+
+/* Title */
+.title {
+    text-align: center;
+    margin-bottom: 25px;
+    font-size: 26px;
+}
+
+/* Forms Layout */
+.forms {
+    display: flex;
+    gap: 30px;
+}
+
+/* Form Box */
+.box {
+    flex: 1;
+    background: rgba(0,0,0,0.55);
+    padding: 25px;
+    border-radius: 6px;
+}
+
+.box h2 {
+    color: #3ad6c2;
+    margin-bottom: 15px;
+}
+
+/* Inputs */
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+    width: 100%;
+    padding: 12px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    background: #555;
+    color: #fff;
+}
+
+input::placeholder {
+    color: #ccc;
+}
+
+small {
+    font-size: 12px;
+    color: #bbb;
+}
+
+/* Radio & Checkbox */
+.radio-group,
+.check-group,
+.remember {
+    margin: 12px 0;
+    font-size: 14px;
+}
+
+/* Button */
+.btn {
+    width: 100%;
+    padding: 12px;
+    background: #d4a017;
+    border: none;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.btn:hover {
+    background: #b88a12;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .forms {
+        flex-direction: column;
+    }
+}
