@@ -1,0 +1,154 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background: #2d2d2d;
+}
+
+.team-section {
+  background: #f1f1f1;
+  width: 80%;
+  margin: 40px auto;
+  padding: 30px;
+  text-align: center;
+  border-radius: 6px;
+}
+
+.subtitle {
+  font-size: 14px;
+  color: #777;
+}
+
+.team-section h2 {
+  margin: 10px 0 30px;
+}
+/* Make the team container responsive */
+.team-container {
+  display: flex;
+  flex-wrap: wrap; /* allow cards to wrap on small screens */
+  justify-content: center;
+  gap: 20px; /* space between cards */
+  padding: 20px;
+}
+
+/* Team card styling */
+.team-card {
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 20px;
+  text-align: center;
+  width: 220px; /* fixed width for cards */
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  transition: transform 0.3s;
+}
+
+/* FIX TEAM CARD IMAGE (DESKTOP + MOBILE SAFE) */
+.team-card img {
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin: 0 auto 15px;
+  display: block;
+}
+
+/* Social icons inside circle */
+.team-card .social {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.team-card .social span {
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  background-color: #f0f0f0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.team-card .social span img {
+  width: 18px;
+  height: 18px;
+  object-fit: contain;
+}
+
+/* MOBILE VIEW - SIMPLE CAROUSEL */
+@media (max-width: 600px) {
+  .team-section {
+    width: 95%;
+    margin: 20px auto;
+    padding: 20px 10px;
+    overflow: hidden;
+  }
+  
+  .team-container {
+    display: flex;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    gap: 0;
+    padding: 10px 0;
+    width: 100%;
+  }
+  
+  .team-container::-webkit-scrollbar {
+    display: none;
+  }
+  
+  .team-container {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+  
+  .team-card {
+    flex: 0 0 100%;
+    scroll-snap-align: start;
+    width: 100%;
+    padding: 25px 20px;
+    margin: 0 5px;
+    border-radius: 10px;
+  }
+  
+  .team-card img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-bottom: 15px;
+  }
+  
+  .team-card h3 {
+    font-size: 18px;
+    margin: 10px 0;
+  }
+  
+  .team-card p {
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 15px;
+  }
+  
+  .team-card .social span {
+    width: 32px;
+    height: 32px;
+  }
+  
+  .team-card .social span img {
+    width: 16px;
+    height: 16px;
+  }
+  
+  .slide-counter {
+    display: block;
+    text-align: center;
+    font-size: 14px;
+    color: #777;
+    margin-top: 15px;
+  }
+}
