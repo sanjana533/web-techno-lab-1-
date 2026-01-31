@@ -1,0 +1,39 @@
+body {
+    font-family: Arial;
+    background: linear-gradient(purple, #4b0082);
+    height: 100vh;
+}
+
+.navbar {
+    background-color: #f1f1f1;
+    padding: 5px;
+    text-align: center;
+}
+
+.navbar a{
+    color: black;
+    padding: 10px 15px;
+    text-decoration: none;
+    font-size: 15px;
+    display: inline-block;
+}
+.dropdown {
+    display: inline-block;
+    position: relative;
+} 
+.dropdown-content {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: lightgray;
+    min-width: 180px;
+}
+.dropdown-content a:hover {
+    background-color: whitesmoke;
+    color: #3d3838;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
