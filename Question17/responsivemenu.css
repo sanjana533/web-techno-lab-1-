@@ -1,0 +1,57 @@
+body {
+    margin: 0;
+    font-family: Arial;
+}
+
+header {
+    background: #0b3c5d;
+    color: white;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+}
+
+.logo {
+    flex: 1;
+    font-size: 20px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px;
+    display: inline-block;
+}
+
+.menu-btn {
+    display: none;
+    background: #1d6fa5;
+    padding: 6px 10px;
+    cursor: pointer;
+}
+
+#menu-toggle {
+    display: none;
+}
+
+/* Mobile View */
+@media (max-width: 768px) {
+    nav {
+        display: none;
+        width: 100%;
+        background: #0b3c5d;
+    }
+
+    nav a {
+        display: block;
+        border-top: 1px solid #fff;
+    }
+
+    #menu-toggle:checked + .menu-btn + nav {
+        display: block;
+    }
+
+    .menu-btn {
+        display: block;
+    }
+}

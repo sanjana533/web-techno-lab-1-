@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Header with Sidebar Menu</title>
+<style>
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: rgb(104, 104, 104);
+}
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+    background-color: rgb(37, 78, 202);
+    color: white;
+}
+
+.header .mystery-code {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.header .menu-box {
+    font-size: 20px;
+    font-weight: bold;
+    background-color: rgb(37, 78, 202);
+    border: 2px solid white;
+    border-radius: 5px;
+    padding: 5px 15px;
+}
+.sidebar {
+    position: fixed;
+    left: 0;
+    top: 67px;
+    width: 250px;
+    height: calc(100vh - 60px);
+    background-color: rgb(24, 55, 149);
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+  .sidebar-menu a {
+    display: block;
+    color: white;
+    text-decoration: none;
+    padding: 12px 15px;
+    margin-bottom: 5px;
+    border-radius: 5px;
+    transition: background 0.3s;
+}
+</style>
+</head>
+<body>
+
+<div class="header">
+  <div class="mystery-code">Mystery Code</div>
+  <div class="menu-box">Menu</div>
+</div>
+
+<div class="sidebar">
+  <div class="sidebar-menu">
+    <a href="#">Home</a>
+    <a href="#">About Us</a>
+    <a href="#">Service</a>
+    <a href="#">Portfolio</a>
+    <a href="#">Blog</a>
+    <a href="#">Contact Us</a>
+ </div>
+</body>
+</html>
